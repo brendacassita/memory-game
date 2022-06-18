@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import CardForm from "./CardForm";
-import { createDeck, shuffle } from "./helpers";
+import { createDeck, shuffle } from "./Helpers";
 
 let initDeck = ["x", "y", "z"];
 const MemoryBoard = () => {
@@ -79,6 +79,7 @@ const MemoryBoard = () => {
       <div className="container">{renderBoard()}</div>
       <hr />
       <CardForm addValue={addValue} />
+      
     </>
   );
 };
